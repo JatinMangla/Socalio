@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Socalio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="exit">Exit</string>
+    <string name="action_setting">Settings</string>
+    <string name="title_activity_white_board">WhiteBoard</string>
+</resources>

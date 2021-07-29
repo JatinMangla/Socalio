@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "322353482149",
+    "project_id": "socalio-178b7",
+    "storage_bucket": "socalio-178b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322353482149:android:3c3b4b5820125eb7a0404c",
+        "android_client_info": {
+          "package_name": "com.example.socalio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322353482149-flp90v95a1nn46u2j4esk01qomc8spea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socalio",
+            "certificate_hash": "8f78837d021447988e33296f18019f0c181cad58"
+          }
+        },
+        {
+          "client_id": "322353482149-bfmog60odk2tm4dnc5kvv5tsnf5odve4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3W1RRvSJZDLqfK3U9P6gQE4GPVHHq0kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322353482149-bfmog60odk2tm4dnc5kvv5tsnf5odve4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="5dp"
+    android:background="@drawable/background_left"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/nameTv"
+          android:text="Name"
+          android:textSize="13sp"
+          android:textColor="#99550303"
+          android:textStyle="bold"
+          android:layout_marginStart="1dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/messageTv"
+          android:textSize="12sp"
+          android:layout_marginStart="1dp"
+          android:autoSizeTextType="uniform"
+          android:autoSizeStepGranularity="2dp"
+          android:text="the message"
+          android:textColor="@android:color/white"/>
+
+      <TextView
+          android:id="@+id/timeTv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="time"
+          android:layout_gravity="end"
+          android:textSize="12sp"
+          android:layout_marginEnd="5dp"/>
+
+
+
+</LinearLayout>

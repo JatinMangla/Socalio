@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/profileIv"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_image_white"
+            android:background="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="His Name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/userStatusTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycleView"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        app:stackFromEnd="true"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/toolbar" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fadingEdge="horizontal"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/attachbtn"
+            android:background="@null"
+            android:src="@drawable/ic_attach_black"
+            android:layout_gravity="bottom"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageEt"
+            android:layout_gravity="bottom"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="100dp"
+            android:background="#8A5D6161"
+            android:hint="type a message"
+            android:inputType="textCapSentences|textMultiLine"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/main"
+            android:clickable="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="50dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_add_24"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/catch1"
+            android:layout_gravity="end"
+            android:visibility="invisible"
+            android:layout_marginEnd="51dp"
+            android:src="@drawable/ic_baseline_speed_24"
+            android:layout_marginBottom="200dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/game"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="end"
+            android:visibility="invisible"
+            android:layout_marginEnd="51dp"
+            android:src="@drawable/ic_baseline_speed_24"
+            android:layout_marginBottom="110dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/whiteboard"
+            android:layout_gravity="end"
+            android:visibility="invisible"
+            android:layout_marginEnd="51dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ic_baseline_crop_portrait_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="113dp"
+            android:layout_marginTop="6dp"
+            android:text="Catch score"
+            android:visibility="invisible"
+            android:id="@+id/catch1_text"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="113dp"
+            android:layout_marginTop="80dp"
+            android:text="Speed UP"
+            android:visibility="invisible"
+            android:id="@+id/gametext"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White Board"
+            android:visibility="invisible"
+            android:id="@+id/whiteboardtext"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="end"
+            android:layout_marginEnd="113dp"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_send"
+            android:background="#8A8484"
+            android:id="@+id/sendBtn"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

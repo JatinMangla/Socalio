@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOCALIO"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="210dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:text="Register"
+        android:layout_below="@id/tv1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Login"
+        android:layout_below="@id/button1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>
